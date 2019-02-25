@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const postcss = require("postcss");
 
-const REGEX = /\[.*?\]|[:*][a-z-_:]+|[^a-z-_:]+/g;
+const REGEX = /\[.*?\]|[:*][a-z-_:]+|[^a-z]+/g;
 const DEFAULT_OPTIONS = {
   path: "./src",
   exts: [".js", ".jsx", ".html", ".vue", ".svelte"],
