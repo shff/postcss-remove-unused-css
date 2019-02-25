@@ -1,0 +1,11 @@
+{
+  "license": "MIT",
+  "name": "postcss-remove-unused-css",
+  "description": "Whitelists CSS selectors based on your other files",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Silvio Henrique Ferreira <shferreira@me.com>",
+  "peerDependencies": {
+    "postcss": "^7.0.14"
+  }
+}
