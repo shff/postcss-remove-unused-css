@@ -1,10 +1,14 @@
 # postcss-remove-unused-css
 
-This is a simple to use PostCSS plugin that whitelists your CSS selectors based on your other files.
+This is a simple to use PostCSS plugin that removes CSS selectors based on your other files.
 
 Unlike Uncss, the content doesn't matter: we're running a simple regex on the text files instead of a parser. We're also not running any Javascript. Therefore, it is simpler, but it might produce some false-positives.
 
 It is inspired by PurifyCSS and works similarly.
+
+## Caveats
+
+I'm using a simple file traversal algorithm. I haven't tested it in all operating systems. Please file an issue and I'll look into it!
 
 ## Installation:
 
@@ -61,6 +65,6 @@ Always remember not to include CSS files in your extensions!
   },
 ```
 
-### License
+## License
 
 Copyright (c) 2019 Silvio Henrique Ferreira. See the LICENSE file for license rights and limitations (MIT).

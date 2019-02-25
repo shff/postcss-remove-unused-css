@@ -2,10 +2,18 @@
   "license": "MIT",
   "name": "postcss-remove-unused-css",
   "description": "Whitelists CSS selectors based on your other files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Silvio Henrique Ferreira <shferreira@me.com>",
   "peerDependencies": {
     "postcss": "^7.0.14"
+  },
+  "homepage": "https://github.com/shff/postcss-remove-unused-css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shff/postcss-remove-unused-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shff/postcss-remove-unused-css/issues"
   }
 }
