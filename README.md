@@ -2,7 +2,9 @@
 
 This is a simple to use PostCSS plugin that removes CSS selectors based on your other files.
 
-Unlike Uncss, the content doesn't matter: we're running a simple regex on the text files instead of a parser. We're also not running any Javascript. Therefore, it is simpler, but it might produce some false-positives.
+It scans your HTML and JS files (the extensions are configurable) and looks for words. Then it compares with words in your CSS selectors and filters out selectors without matches. If you have the word `blue` written in one of your JS or HTML files, it will allow a selector called `.blue` in your CSS. It is a simple and imperfect system, but it works.
+
+Unlike Uncss, the content of your other files doesn't matter: we're running a simple regex on the text files instead of a parser. We're also not running any Javascript. Therefore, it is simpler, but it might produce some false-positives.
 
 It is inspired by PurifyCSS and works similarly.
 
@@ -37,7 +39,7 @@ See [PostCSS] docs for examples for your environment.
 | exts      | `Array`  | Extensions to look into    | [".js", ".jsx", ".ts", ".tsx", ".html", ".vue", ".svelte"] |
 | whitelist | `Array`  | Your whitelisted words     | ["html", "body"]                                           |
 
-Always remember not to include CSS files in your extensions!
+Always remember not to include CSS files in your extensions. This will make the plugin look for identifiers inside CSS files and the plugin won't optimize your code.
 
 #### Using `.postcssrc`
 
