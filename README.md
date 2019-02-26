@@ -46,7 +46,7 @@ Always remember not to include CSS files in your extensions. This will make the 
 ```json
 {
   "plugins": {
-    "postcss-remove-unused": {
+    "postcss-remove-unused-css": {
       "path": "./app",
       "exts": [".js", ".html"]
     }
@@ -59,7 +59,7 @@ Always remember not to include CSS files in your extensions. This will make the 
 ```json
   "postcss": {
     "plugins": {
-      "postcss-remove-unused": {
+      "postcss-remove-unused-css": {
         "path": "./app",
         "exts": [".js", ".html"]
       }
