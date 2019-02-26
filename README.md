@@ -8,6 +8,37 @@ Unlike Uncss, the content of your other files doesn't matter: we're running a si
 
 It is inspired by PurifyCSS and works similarly.
 
+### An example
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="blue bold">Hello, world!</div>
+  </body>
+</html>
+```
+
+#### Before
+
+```css
+body { background: gray }
+.blue { color: blue }
+.red { color: red }
+.pink { color: pink }
+.bold { font-weight: bold }
+.thin { font-weight: 100 }
+.center { text-align: center }
+```
+
+#### After
+
+```css
+body { background: gray }
+.blue { color: blue }
+.bold { font-weight: bold }
+```
+
 ## Caveats
 
 I'm using a simple file traversal algorithm. I haven't tested it in all operating systems. Please file an issue and I'll look into it!
