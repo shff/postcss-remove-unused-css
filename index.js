@@ -12,7 +12,10 @@ const DEFAULT_OPTIONS = {
 const getFiles = (pathName, exts) =>
   fs.readdirSync(pathName).flatMap(file => {
     var filename = path.join(pathName, file);
-    if (fs.lstatSync(filename).isDirectory()) {
+    if (
+      fs.lstatSync(filename).isDirectory() &&
+      !filename.includes("node_modules")
+    ) {
       return getFiles(filename, exts);
     } else if (exts.includes(path.extname(filename))) {
       return [filename];
