@@ -4,7 +4,7 @@ This is a simple to use PostCSS plugin that removes CSS selectors based on your 
 
 This package is inspired by [PurifyCSS](https://github.com/purifycss/purifycss) and works the same.
 
-### How it works
+## How it works
 
 It scans your HTML and JS files (you can configure which extensions it looks) and looks for words. Then it compares with words in your CSS selectors and filters out selectors without matches. If you have the word `blue` written in one of your JS or HTML files, it will allow a selector called `.blue` in your CSS. It is a simple and imperfect system, but it works.
 
@@ -68,6 +68,8 @@ See [PostCSS] docs for examples for your environment.
     }
   },
 ```
+
+## Example
 
 #### HTML File:
 
