@@ -15,5 +15,8 @@
   },
   "bugs": {
     "url": "https://github.com/shff/postcss-remove-unused-css/issues"
+  },
+  "engines": {
+    "node": ">= 11.0"
   }
 }
